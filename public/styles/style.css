@@ -250,7 +250,6 @@ div.profile-pic{
 	width: 70px;
 	border-radius: 5px;
 	margin: -30px 0px 0px 8px;
-	background-color: orange;
 }
 
 div#profile-name {
@@ -361,12 +360,11 @@ div#timeline-header h1 {
 ul.tweet-stream {
 	list-style: none;
 	font-family: "Helvetica Neue",Arial,sans-serif;
-	margin-top: -10px;
 }
 
 div#tweet-content, div#tweet-footer {
 	display: flex;
-	margin: 9px 12px 9px 12px;
+	margin: 0px 12px 9px 12px;
 	padding-top: 10px;
 }
 
@@ -477,7 +475,42 @@ span#more::before {
 	content: '\f150';
 }
 
+/*------RETWEET TEXT------- */
 
+div#retweet-info {
+	height: 12px;
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	padding-top: 8px;
+}
 
+div#rt-symbol::before {
+	font-family: 'rosetta';
+	content: '\f006';
+	color: #77B255
+}
 
+div#rt-symbol {
+	margin-left: 46px;
+}
+
+div#rt-by {
+	margin-left: 8px;
+	color: #8899A6;
+	padding-top: 2px;
+}
+
+div#tweet-content {
+	margin-top: -2px;
+}
+
+a {
+	color: #0084B4;
+	text-decoration: none;
+}
+
+li.retweet div#tweet-content div#pic-container div#tweeter.profile-pic {
+	background-image: url('https://pbs.twimg.com/profile_images/378800000729927544/b0e8b9b2a015b92ca5f3473852f63e1c_bigger.jpeg')
+}
 
