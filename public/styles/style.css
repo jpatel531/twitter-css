@@ -21,13 +21,17 @@ body {
 /*--------HEADER---------*/
 
 
-/*LEFT BAR*/
+/*------LEFT BAR---------*/
+
 
 div#header {
 	display: flex;
 	justify-content: center;
+	background-color: white;
 	align-items: center;
 	height: 46px;
+	width: 100%;
+	position: fixed;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -37,14 +41,12 @@ nav {
 }
 
 div.logo {
-/*	background-color: orange;*/
 	color:#55acee;
 	width: 24px;
 	height: 21px;
 }
 
 nav {
-/*	background-color: salmon;*/
 	display: flex;
 	font-color: #66757f;
 	font-size: 13px;
@@ -61,8 +63,8 @@ nav.left div.button {
 	margin-right: 15px;
 }
 
-div.button::hover, div.button::focus {
-	color: #55acee;
+nav div.button:hover{
+	color: #0084b4;
 }
 
 div.logo::before, div.button::before{
@@ -91,11 +93,13 @@ div#me::before {
 	content: '\f056';
 }
 
-/*RIGHT BAR*/
+/*-----------RIGHT BAR------------*/
 
 nav.right div.button {
+	color: #66757F;
 	margin-right: 15px;
 	margin-left: 15px;
+	opacity: 0.7;
 }
 
 nav.right {
@@ -106,12 +110,11 @@ form#search-bar {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	margin: 7px 15px 0px 0px;
+	margin: 7px 15px 7px 0px;
 	font-size: 12px;
 	color: #FFF;
 	width: 221px;
 	border-radius: 21px;
-	/*border: 0px;*/
 	background-color: #66757F;
 	opacity: 0.6;
 }
@@ -121,7 +124,11 @@ form#search-bar input {
 	width: 182px;
 	border: none;
 	color: #FFF;
-	background-color: #66757F;
+	background-color: transparent;
+}
+
+input#field:focus {
+	background-color: red;
 }
 
 span.search-icon {
@@ -133,7 +140,6 @@ span.search-icon::before {
 	content: '\f058';
 }
 
-
 #messages::before {
 	content: '\f054';
 }
@@ -144,5 +150,334 @@ span.search-icon::before {
 
 #compose::before {
 	content: '\f029';
+	color: white;
+	font-size: 24;
 }
+
+#compose {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 132, 180, 0.8);
+	height: 36px;
+	width: 36px;
+	border-radius: 5px;
+}
+
+/*----------MAIN BODY----------*/
+
+div#main-body {
+	background-image: url("http://cooltwitterbackgrounds.com/wp-content/uploads/2011/10/scripture-1920x1200_cool_twitter_backgrounds1.jpg");
+	width: 100%;
+	padding-top: 46px;
+	height: 2000px;
+	background-repeat: none;
+	display: flex;
+	justify-content: center;
+}
+
+div.col-1, div.col-3 {
+	width: 255px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+div.col-2 {
+	display: flex;
+}
+
+div#timeline {
+	background-color: white;
+	width: 590px;
+	margin: 10px auto;
+	border-radius: 6px;
+	border: 1px solid #E1E8ED;
+}
+
+div#profile, div#trends, div#suggestions {
+	margin-top: 10px;
+	width: 290px;
+	border-radius: 6px;
+	background-color: white;
+}
+
+.col-1 div {
+	margin-right: 60px;
+	height: 255px;
+}
+
+.col-3 div {
+	margin-left: 60px;
+	height: 290px;
+}
+
+div#trends {
+	background-color: white;
+}
+
+div#suggestions {
+	height: 310px;
+	background-color: white;
+}
+
+/*------PROFILE-INFO-------*/
+
+/*-------PROFILE DASHBOARD-------*/
+
+div#cover-photo {
+	background-image: url('https://pbs.twimg.com/profile_banners/731893183/1403986815/600x200');
+	background-size: 100% auto;
+	border-radius: 4px 4px 0 0;
+	width: 100%;
+	height: 95px;
+	background-repeat: none;
+	border-bottom: 1px solid #E1E8ED;
+}
+
+div#profile-info {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 40px;
+}
+
+div.profile-pic{
+	background-image: url('index.png');
+	background-repeat: none;
+	height: 70px;
+	width: 70px;
+	border-radius: 5px;
+	margin: -30px 0px 0px 8px;
+	background-color: orange;
+}
+
+div#profile-name {
+	height: 37px;
+}
+
+div#profile-name a{
+	margin-left: 10px;
+	text-decoration: none;
+	margin-top: 8px;
+}
+
+div#profile-name a#name{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	color: black;
+	border: none;
+}
+
+div#profile-name a#id {
+	color: #66757F;
+	line-height: 16px;
+	font-size: 12px;
+}
+
+div#profile-stats {
+	height: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+div#profile-stats div {
+	flex-grow: 1;
+	height: 100%;
+	margin-right: 0px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+div#compose-new {
+	height: 58px;
+	width: 288px;
+	background-color: #E5F2F7;
+	border: 1px solid;
+	border-color: #BFE0EC;
+	border-radius: 0px 0px 5px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p#tweet, p#following, p#followers {
+	color: #8C9CA9;
+	font-size: 10px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+p#t-count, p#fi-count, p#fe-count {
+	font-size: 18px;
+	margin-top: -10px;
+	font-weight: 500;
+	color: #0084B4;
+}
+
+input#tweet-field {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Helvetica Neue, sans-serif;
+	width: 264px;
+	height: 32px;
+	border: 1px solid;
+	border-color: #BFE0EC;
+	padding: 8px;
+	color: #292F33;
+}
+
+/*------TWITTER FEED-------*/
+
+/*---HEADER---*/
+
+.col-2#timeline {
+	display: flex;
+	flex-direction: column;
+}
+
+#timeline div#timeline-header {
+	width: 576.2px;
+	height: 47px;
+	display: flex;
+	align-items: center;
+	padding-left: 12px;
+	border: 1px solid #E1E8ED;
+	border-radius: 5px 5px 0px 0px;
+}
+
+div#timeline-header h1 {
+	color: #66757F;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/*-----STREAM-----*/
+
+ul.tweet-stream {
+	list-style: none;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	margin-top: -10px;
+}
+
+div#tweet-content, div#tweet-footer {
+	display: flex;
+	margin: 9px 12px 9px 12px;
+	padding-top: 10px;
+}
+
+div#tweeter.profile-pic {
+	background-image: url('https://pbs.twimg.com/profile_images/3282148411/ffd110ce6c373bdee48eb5885e0c9396_bigger.jpeg');
+	background-size: 46px;
+	width: 46px;
+	height: 46px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+div#tweet-text {
+	margin-left: 10px;
+}
+
+span#username {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+span#user-id, span#timestamp {
+	color: #8899A6;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+span#timestamp::before {
+	content: " · ";
+}
+
+div#tweet-proper p {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+div#tweet-footer {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 64px;
+	margin-top: -9px;
+	padding-bottom: 15px;
+	margin-bottom: -4px;
+}
+
+div#tweet-footer div {
+	flex-grow: 1;
+}
+
+li {
+	border-bottom: 1px solid #E1E8ED;
+}
+
+li#tweet:hover {
+	background-color: #F5F8FA
+}
+
+div#expand {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 12px;
+	color: #8899A6;
+}
+
+div#options {
+	display: flex;
+	justify-content: flex-end;
+	width: 79px;
+}
+
+div#options span {
+	color: #E1E8ED;
+	font-size: 12px;
+	flex-grow: 1;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	display: flex;
+	justify-content: flex-end;
+}
+
+li#tweet:hover div#options span {
+	color: #8899A6;
+}
+
+li#tweet:hover div#expand {
+	color: #0084B4;
+}
+
+div#options span::before {
+	font-family: 'rosetta';
+	margin-right: 5px;
+}
+
+span#reply::before {
+	content: '\f151';
+}
+
+span#retweet::before {
+	content: '\f152';
+}
+
+span#favorite::before {
+	content: '\f147';
+}
+
+span#more::before {
+	content: '\f150';
+}
+
+
+
+
 

@@ -2,59 +2,189 @@
 <head>
 	<title>Twitter</title>
 	<link href="../public/styles/style.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 
 <body>
 
-<div id="header">
+<div id="header-wrapper">
+	<div id="header">
 
-	<nav class="left">
+		<nav class="left">
 
-		<div class="button" id="home">
-			Home
+			<div class="button" id="home">
+				Home
+			</div>
+
+			<div class="button" id="notifications">
+				Notifications
+			</div>
+
+			<div class="button" id="discover">
+				Discover
+			</div>
+
+			<div class="button" id="me">
+				Me
+			</div>
+
+		</nav>
+
+		<div class="logo">
 		</div>
 
-		<div class="button" id="notifications">
-			Notifications
-		</div>
+		<nav class="right">
 
-		<div class="button" id="discover">
-			Discover
-		</div>
+			<div class="search">
+				<form id="search-bar">
+					<input type="text" id="field" placeholder="Search"></input>
+					<span class="search-icon"></span>
+				</form>
+			</div>
 
-		<div class="button" id="me">
-			Me
-		</div>
+			<div class="button" id="messages">
+			</div>
 
-	</nav>
+			<div class="button" id="settings">
+			</div>
 
-	<div class="logo">
+			<div class="button" id="compose">
+			</div>
+
+		</nav>
+
 	</div>
-
-	<nav class="right">
-
-		<div class="search">
-			<form id="search-bar">
-				<input type="text" placeholder="Search"></input>
-				<span class="search-icon"></span>
-			</form>
-		</div>
-
-		<div class="button" id="messages">
-		</div>
-
-		<div class="button" id="settings">
-		</div>
-
-		<div class="button" id="compose">
-		</div>
-
-	</nav>
-
 </div>
 
+<div id="main-body">
+
+	<div class="col-1">
+
+		<div id="profile">
+
+			<div id="cover-photo">
+			</div>
+
+			<div id="profile-info">
+
+				<div class="profile-pic">
+				</div>
+
+				<div id="profile-name">
+					<a id="name" href="#">Notes</a> <br>
+					<a id="id" href="#">@notespub</a>
+				</div>
+			</div>
+
+			<div id="profile-stats">
+					<div id="tweet-count">
+						<p id="tweet">Tweets</p><br>
+						<p id="t-count">313</p>
+					</div>
+
+					<div id="following-count">
+						<p id="following">Following</p><br>
+						<p id="fi-count">598</p>
+					</div>
+
+					<div id="follower-count">
+						<p id="followers">Followers</p><br>
+						<p id="fe-count">182</p>
+					</div>
+			</div>
 
 
+			<div id="compose-new">
+				<form id="tweet-form">
+					<input type="text" id="tweet-field" placeholder="Compose new Tweet..."> </input>
+				</form>
+			</div>
+
+		</div>
+
+		<div id="trends">
+		</div>
+
+	</div>
+
+
+	<div class="col-2">
+
+		<div id="timeline">
+
+			<div id="timeline-header">
+				<h1> Tweets </h1>
+			</div>
+
+			<div id="twitter-feed">
+
+				<ul class="tweet-stream">
+
+				<li class="text-only" id="tweet">
+					<div id="tweet-content">
+
+						<div id="pic-container">
+
+							<div class="profile-pic" id="tweeter"> 
+							</div>
+
+						</div>
+
+						<div id="tweet-text">
+							<div id="profile-details">
+								<span id="username">SALT</span>
+								<span id="user-id">@saltpublishing</span>
+								<span id="timestamp">46m</span>
+							</div>
+
+							<div id="tweet-proper">
+								<p> Reading Kevin Brooks' brilliant The Bunker Diary. No spoilers please. But WOW WOW WOW.</p>
+							</div>
+						</div>
+					</div>
+
+					<div id="tweet-footer">
+						<div id="expand">
+							<p> Expand </p>
+						</div>
+
+						<div id="options">
+							<span id="reply"> Reply </span>
+							<span id="retweet"> Retweet </span>
+							<span id="favorite"> Favorite </span>
+							<span id="more"> More </span>
+						</div>
+
+					</div>
+
+				</li>
+
+			</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="col-3">
+
+		<div id="suggestions">
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
 
