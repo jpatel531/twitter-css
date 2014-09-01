@@ -514,3 +514,19 @@ li.retweet div#tweet-content div#pic-container div#tweeter.profile-pic {
 	background-image: url('https://pbs.twimg.com/profile_images/378800000729927544/b0e8b9b2a015b92ca5f3473852f63e1c_bigger.jpeg')
 }
 
+/*-----PHOTO TWEET-----*/
+
+div#photo-container {
+	margin-left: 64px;
+	background-size: 100% auto;
+	height: 255px;
+	width: 506px;
+	background-image: url(https://pbs.twimg.com/media/BraIms9IMAA9Red.jpg);
+	border-radius: 6px;
+	margin-bottom: 12px;
+}
+
+li.photo div#tweet-content div#pic-container div#tweeter.profile-pic {
+	background-image: url('https://pbs.twimg.com/profile_images/419029219222364160/5boSSzvc_bigger.jpeg')
+}
+
